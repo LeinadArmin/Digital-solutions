@@ -1,0 +1,130 @@
+/* General */
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #ff5a5f;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #ff5a5f;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('https://gasesgrit.com/wp-content/uploads/2022/08/optimizacion-de-los-procesos-en-la-industria.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Game Cards */
+.game-card, .product-card {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.game-card:hover, .product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.game-card img, .product-img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #555;
+  margin-bottom: 1rem;
+}
+
+.product-title, .card-title {
+  font-size: 1.25rem;
+  color: #ff5a5f;
+}
+
+.product-text, .card-text {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+/* Botones */
+.btn-outline-light {
+  color: #ff5a5f;
+  border-color: #ff5a5f;
+}
+
+.btn-outline-light:hover {
+  background-color: #ff5a5f;
+  color: #fff;
+}
+
+/* Ventajas Competitivas */
+.bg-light {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+/* Testimonios */
+.testimonials-section {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+/* Proceso de Trabajo */
+.process-section {
+  padding: 2rem 0;
+  background-color: #121212;
+}
+
+.process-section .row div {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Espaciado adicional para Listado de Productos */
+section.container.my-5 {
+  margin-bottom: 2rem;
+}
+
+.product-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}

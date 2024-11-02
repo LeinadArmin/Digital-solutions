@@ -1,28 +1,19 @@
 <!-- app.component.html -->
 
 <header class="bg-dark text-white">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Servicios TI</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" (click)="navigateToHome()">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="navigateToServices()" >Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="navigateToAbout()">Sobre Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="navigateToContact()">Contacto</a>
-          </li>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-dark container">
+    <a class="navbar-brand" href="#">Servicios TI</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" (click)="navigateToHome()">Inicio</a></li>
+<li class="nav-item"><a class="nav-link" (click)="navigateToServices()">Servicios</a></li>
+<li class="nav-item"><a class="nav-link" (click)="navigateToAbout()">Nosotros</a></li>
+<li class="nav-item"><a class="nav-link" (click)="navigateToContact()">Contacto</a></li>
+
+      </ul>
     </div>
   </nav>
 </header>
@@ -30,6 +21,7 @@
 <!-- Este es el contenedor para las rutas -->
 <router-outlet></router-outlet>
 
-<footer class="bg-dark text-white text-center py-4">
+<footer class="footer bg-dark text-white text-center py-3">
   <p>&copy; 2024 Servicios TI. Todos los derechos reservados.</p>
 </footer>
+
