@@ -152,3 +152,67 @@ body, .navbar, .nav-link {
 .hero-section {
   box-shadow: inset 0 -60px 80px rgba(0, 0, 0, 0.5);
 }
+
+/* Sección de Servicios Clave */
+/* Sección de Título */
+.section-title {
+  font-size: 2rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* Tarjetas de Servicio */
+.service-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.service-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #007bff;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+}
+
+.service-text {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Botones de Servicio */
+.service-card .btn {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.service-card .btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
