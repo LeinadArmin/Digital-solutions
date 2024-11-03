@@ -46,4 +46,33 @@
     color: #aaa;
     font-size: 0.9rem;
   }
+
+  /* Fuente Roboto para el Navbar */
+body, .navbar, .nav-link {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Fondo negro inicial */
+#navbar {
+  background-color: #1a1a1a;
+  transition: background-color 0.3s;
+}
+
+/* Fondo más oscuro o sombra al hacer scroll */
+#navbar.scrolled {
+  background-color: transparent; /* o un color más oscuro si deseas */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Ajustes de color para enlaces */
+.nav-link {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ff5a5f; /* Color de acento al hacer hover */
+}
+
   
