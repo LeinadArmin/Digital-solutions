@@ -75,4 +75,80 @@ body, .navbar, .nav-link {
   color: #ff5a5f; /* Color de acento al hacer hover */
 }
 
-  
+/* Hero Section */
+.hero-section {
+  background: url('https://gasesgrit.com/wp-content/uploads/2022/08/optimizacion-de-los-procesos-en-la-industria.jpg') center/cover no-repeat;
+  position: relative;
+  color: #fff;
+  height: 80vh;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Efecto de difuminado */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Para oscurecer ligeramente */
+  backdrop-filter: blur(4px); /* Efecto de difuminado */
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1 {
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero-section p {
+  animation: fadeInUp 1s ease-out;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-outline-light:hover {
+  color: #007bff;
+  background-color: #fff;
+}
+
+.hero-section {
+  box-shadow: inset 0 -60px 80px rgba(0, 0, 0, 0.5);
+}
