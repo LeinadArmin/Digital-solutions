@@ -1,15 +1,19 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home-component.component.html',
-  styleUrls: ['./home-component.component.css'],
-  standalone: true
+  styleUrls: ['./home-component.component.css']
 })
 export class HomeComponent implements AfterViewInit {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   ngAfterViewInit() {
-    this.checkVisibility();
-    window.addEventListener('scroll', this.checkVisibility);
+    if (isPlatformBrowser(this.platformId)) {
+      this.checkVisibility();
+      window.addEventListener('scroll', this.checkVisibility.bind(this));
+    }
   }
 
   checkVisibility() {

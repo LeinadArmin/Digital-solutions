@@ -216,3 +216,182 @@ body, .navbar, .nav-link {
   background-color: #0056b3;
   transform: translateY(-2px);
 }
+
+/* Sección opciones de personalización */
+/* Título de la Sección */
+.section-title {
+  font-size: 2.5rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* Tarjetas de Producto */
+.product-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Ícono de la Tarjeta */
+.product-icon {
+  font-size: 3rem;
+  color: #007bff;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.product-text {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Botón Personalizar */
+.product-card .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-card .btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Sección Productos */
+/* Sección de Título */
+.section-title {
+  font-size: 2.5rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Tarjetas de Producto */
+.product-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  padding: 1.5rem;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del Producto */
+.product-img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1rem;
+}
+
+/* Título del Producto */
+.product-title {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+/* Precio del Producto */
+.product-price {
+  font-size: 1.2rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Botón */
+.product-card .btn {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-card .btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Ventajas Competitivas */
+/* Título de Sección */
+.section-title {
+  font-size: 2.5rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* Tarjetas de Ventajas */
+.advantage-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem;
+}
+
+.advantage-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Íconos */
+.advantage-icon {
+  font-size: 3rem;
+  color: #007bff;
+}
+
+.advantage-title {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.advantage-text {
+  color: #666;
+  font-size: 1rem;
+}
+
+.advantage-card:hover .advantage-icon {
+  color: #0056b3;
+}
+
+.section-title::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background-color: #007bff;
+  display: block;
+  margin: 0.5rem auto;
+}
