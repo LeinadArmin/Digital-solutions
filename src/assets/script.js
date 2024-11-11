@@ -18,6 +18,16 @@ window.addEventListener('scroll', function() {
       }
     });
   });
+
+  window.addEventListener('scroll', () => {
+    const steps = document.querySelectorAll('.process-step');
+    steps.forEach(step => {
+      const rect = step.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        step.classList.add('visible');
+      }
+    });
+  });
   
   // Ejecutar al hacer scroll
 window.addEventListener('scroll', checkVisibility);

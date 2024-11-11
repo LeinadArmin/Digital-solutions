@@ -418,3 +418,92 @@ body,
   flex-direction: column;
   min-height: 100vh;
 }
+/* Seccion Procesos */
+/* Título de Sección */
+.section-title {
+  font-size: 2.5rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Pasos del Proceso */
+.process-step {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(30px);
+  position: relative;
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.process-icon {
+  font-size: 3rem;
+  color: #007bff;
+}
+
+.process-title {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.process-text {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Línea Conectora */
+.row::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background-color: #ccc;
+  z-index: -1;
+}
+
+.process-step::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 20px;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.process-step:last-child::after {
+  display: none;
+}
+
+/* Animación de Visibilidad */
+.process-step.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Alineación de Elementos en Pantallas Pequeñas */
+@media (max-width: 768px) {
+  .row::before {
+    display: none;
+  }
+
+  .process-step::after {
+    display: none;
+  }
+
+  .process-step {
+    margin-bottom: 1.5rem;
+  }
+}
