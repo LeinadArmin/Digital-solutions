@@ -1,54 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
 /* Fondo de Hero/Banner */
 .hero {
-    
-    height: 80vh;
-  }
-  
-  /* Estilos de tarjetas de servicio */
-  .service-card {
-    background-color: #222;
-    color: #fff;
-    border: 1px solid #444;
-    transition: transform 0.3s;
-  }
-  .service-card:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Sección de Eventos */
-  .events-section .event-card {
-    background-color: #333;
-    color: #fff;
-    border: 1px solid #555;
-  }
-  .events-section .btn-outline-light {
-    border-color: #fff;
-    color: #fff;
-  }
-  
-  /* Botones y Colores */
-  .btn-primary {
-    background-color: #ff5a5f;
-    border-color: #ff5a5f;
-  }
-  .btn-outline-primary {
-    color: #ff5a5f;
-    border-color: #ff5a5f;
-  }
-  .btn-outline-primary:hover {
-    background-color: #ff5a5f;
-    color: #fff;
-  }
-  
-  .footer {
-    background: #111;
-    color: #aaa;
-    font-size: 0.9rem;
-  }
 
-  /* Fuente Roboto para el Navbar */
-body, .navbar, .nav-link {
+  height: 80vh;
+}
+
+body {
+  margin: 0;
+}
+
+/* Estilos de tarjetas de servicio */
+.service-card {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+/* Sección de Eventos */
+.events-section .event-card {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.events-section .btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Botones y Colores */
+.btn-primary {
+  background-color: #ff5a5f;
+  border-color: #ff5a5f;
+}
+
+.btn-outline-primary {
+  color: #ff5a5f;
+  border-color: #ff5a5f;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ff5a5f;
+  color: #fff;
+}
+
+.footer {
+  background: #111;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Fuente Roboto para el Navbar */
+body,
+.navbar,
+.nav-link {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -60,7 +71,8 @@ body, .navbar, .nav-link {
 
 /* Fondo más oscuro o sombra al hacer scroll */
 #navbar.scrolled {
-  background-color: transparent; /* o un color más oscuro si deseas */
+  background-color: transparent;
+  /* o un color más oscuro si deseas */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -72,7 +84,8 @@ body, .navbar, .nav-link {
 }
 
 .nav-link:hover {
-  color: #ff5a5f; /* Color de acento al hacer hover */
+  color: #ff5a5f;
+  /* Color de acento al hacer hover */
 }
 
 /* Hero Section */
@@ -92,8 +105,10 @@ body, .navbar, .nav-link {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Para oscurecer ligeramente */
-  backdrop-filter: blur(4px); /* Efecto de difuminado */
+  background: rgba(0, 0, 0, 0.5);
+  /* Para oscurecer ligeramente */
+  backdrop-filter: blur(4px);
+  /* Efecto de difuminado */
   z-index: 1;
 }
 
@@ -116,6 +131,7 @@ body, .navbar, .nav-link {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -127,6 +143,7 @@ body, .navbar, .nav-link {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -394,4 +411,10 @@ body, .navbar, .nav-link {
   background-color: #007bff;
   display: block;
   margin: 0.5rem auto;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
