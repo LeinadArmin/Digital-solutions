@@ -2,76 +2,68 @@
 <section class="bg-light py-5">
   <div class="container">
     <h2 class="text-center mb-4">Sobre Nosotros</h2>
-    <p class="text-center mb-4">
-      En Servicios TI nos especializamos en ofrecer soluciones tecnológicas de
+    <p
+      class="text-center lead text-muted mx-auto mb-5"
+      style="max-width: 800px"
+    >
+      En Servicios TI, nos especializamos en ofrecer soluciones tecnológicas de
       calidad para ayudar a nuestros clientes a alcanzar sus objetivos. Nuestro
       equipo combina experiencia y pasión por la tecnología para brindar el
       mejor servicio.
     </p>
 
     <!-- Misión, Visión y Valores -->
-    <div class="row text-center">
-      <div class="col-md-4 mb-4">
-        <h4>Misión</h4>
-        <p>
-          Proporcionar soluciones tecnológicas confiables que impulsen el
-          crecimiento de nuestros clientes.
-        </p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <h4>Visión</h4>
-        <p>
-          Ser un referente en servicios TI, reconocidos por la calidad e
-          innovación de nuestras soluciones.
-        </p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <h4>Valores</h4>
-        <p>
-          Compromiso, innovación, integridad y un enfoque centrado en el
-          cliente.
-        </p>
+    <div class="row">
+      <div class="col-12 col-md-4 mb-4" *ngFor="let card of aboutCards">
+        <about-card
+          [title]="card.title"
+          [content]="card.content"
+          class=""
+        ></about-card>
       </div>
     </div>
 
     <!-- Equipo (Opcional) -->
     <div class="text-center mt-5">
       <h3>Conoce a Nuestro Equipo</h3>
-      <p>
+      <p class="text-muted">
         Un equipo de profesionales dedicados a ofrecer soluciones
         personalizadas.
       </p>
     </div>
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <img
-          src="images/testimage.png"
-          alt="Miembro del Equipo"
-          class="rounded-circle mb-3"
-          width="150"
-        />
-        <h5>Juan Pérez</h5>
-        <p>CEO y Fundador</p>
+    <div class="row mt-4">
+      <div class="col-md-4 text-center mb-4">
+        <div class="team-member shadow-sm rounded p-4">
+          <img
+            src="team-member1.jpg"
+            alt="Miembro del Equipo"
+            class="rounded-circle mb-3 img-fluid team-img"
+          />
+          <h5 class="font-weight-bold">Juan Pérez</h5>
+          <p class="text-muted">CEO y Fundador</p>
+        </div>
       </div>
-      <div class="col-md-4 text-center">
-        <img
-          src="images/testimage.png"
-          alt="Miembro del Equipo"
-          class="rounded-circle mb-3"
-          width="150"
-        />
-        <h5>María García</h5>
-        <p>Directora de Operaciones</p>
+      <div class="col-md-4 text-center mb-4">
+        <div class="team-member shadow-sm rounded p-4">
+          <img
+            src="team-member2.jpg"
+            alt="Miembro del Equipo"
+            class="rounded-circle mb-3 img-fluid team-img"
+          />
+          <h5 class="font-weight-bold">María García</h5>
+          <p class="text-muted">Directora de Operaciones</p>
+        </div>
       </div>
-      <div class="col-md-4 text-center">
-        <img
-          src="images/testimage.png"
-          alt="Miembro del Equipo"
-          class="rounded-circle mb-3"
-          width="150"
-        />
-        <h5>Carlos Sánchez</h5>
-        <p>Jefe de Tecnología</p>
+      <div class="col-md-4 text-center mb-4">
+        <div class="team-member shadow-sm rounded p-4">
+          <img
+            src="team-member3.jpg"
+            alt="Miembro del Equipo"
+            class="rounded-circle mb-3 img-fluid team-img"
+          />
+          <h5 class="font-weight-bold">Carlos Sánchez</h5>
+          <p class="text-muted">Jefe de Tecnología</p>
+        </div>
       </div>
     </div>
   </div>
