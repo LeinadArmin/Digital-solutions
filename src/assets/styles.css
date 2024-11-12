@@ -507,3 +507,32 @@ body,
     margin-bottom: 1.5rem;
   }
 }
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #fff;
+}
+
+.footer-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-nav li {
+  display: inline-block;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
