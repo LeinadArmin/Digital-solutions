@@ -3,8 +3,8 @@ import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home-component.component.html',
-  styleUrls: ['./home-component.component.css']
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements AfterViewInit {
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}

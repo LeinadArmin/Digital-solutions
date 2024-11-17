@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { AboutCardComponent } from '../about/about-card/about-card.component';
+import { AboutCardComponent } from './about-card/about-card.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-about-component',
   standalone: true,
   imports: [CommonModule, AboutCardComponent],
-  templateUrl: './about-component.component.html',
-  styleUrl: './about-component.component.css',
+  templateUrl: './about.component.html',
+  styleUrl: './about.component.css',
 })
 export class AboutComponent {
   aboutCards = [
